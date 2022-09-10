@@ -40,21 +40,21 @@ main {
     padding: 45px 36px 60px 40px;
 }
 
-p{
+p {
     font-family: 'Lexend Deca', sans-serif;
     color: hsla(0, 0%, 100%, 0.65);
     line-height: 20px;
     font-size: 14px;
 }
 
-h1{
+h1 {
     font-family: 'Big Shoulders Display', cursive;
     color: #f2f2f2;
     font-size: 30px;
     margin: 15px 0;
 }
 
-button{
+button {
     width: 135px;
     height: 45px;
     border-radius: 25px;
@@ -63,35 +63,71 @@ button{
     margin-top: 100px;
 }
 
-#cardOne{
-color: #e28525;
+#cardOne {
+    color: #e28525;
 }
 
-#cardOne:active{
+#cardOne:active {
     border: thin solid #f2f2f2;
     background-color: #e28525;
     color: #f2f2f2;
     cursor: pointer;
 }
 
-#cardTwo{
-color: #036872;
+#cardTwo {
+    color: #036872;
 }
 
-#cardTwo:active{
+#cardTwo:active {
     border: thin solid #f2f2f2;
     background-color: #036872;
     color: #f2f2f2;
     cursor: pointer;
 }
 
-#cardThree{
-color:#00343f; 
+#cardThree {
+    color: #00343f;
 }
 
-#cardThree:active{
+#cardThree:active {
     border: thin solid #f2f2f2;
     background-color: #00343f;
     color: #f2f2f2;
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start ;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 460px;
+        color: aliceblue;
+    }
+    #sedan {
+        background-color: #e28525;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        margin-top: 40px;
+        padding: 45px 60px 60px 40px;
+    }
+    
+    #luxury {
+        background-color: #00343f;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 45px 36px 60px 40px;
+        margin-bottom: 40px;
+    }
+
 }
